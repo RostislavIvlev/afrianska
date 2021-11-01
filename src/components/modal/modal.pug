@@ -1,0 +1,13 @@
+.modal-wrapper#modal
+  .modal
+    .modal__close X
+    .modal__title Send us message
+    form.modal__form.modal-form 
+      label.modal-form__label(for="name") Full Name 
+      input.modal-form__input(type="text" placeholder="Name")
+      label.modal-form__label(for="email")  Email
+      input.modal-form__input(type="text" placeholder="Email")
+      label.modal-form__label(for="message")  Message
+      textarea.modal-form__textarea(name="", cols="30", rows="10" placeholder="Your message") 
+
+      +button("Submit")(style="width: 100%")

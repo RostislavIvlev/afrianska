@@ -8,11 +8,13 @@
 @import "../components/clients/clients.scss";
 @import "../components/footer/footer.scss";
 @import "../components/cards/cards.scss";
+@import "../components/modal/modal.scss";
 
 body {
     font-size: 16px;
     font-family: $gilroy;
     letter-spacing: 0.05em;
+    width: 100vw;
 }
 
 h1 {
