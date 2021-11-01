@@ -1,3 +1,59 @@
 @import "./utils/fonts.scss";
 @import "./utils/reset.scss";
 @import "./utils/vars.scss";
+
+body {
+    font-size: 16px;
+    font-family: $gilroy;
+    letter-spacing: 0.05em;
+}
+
+h1 {
+    font-family: $galien;
+    font-size: 4rem;
+    color: $blue01;
+    letter-spacing: 0.04em;
+    line-height: 4.625rem;;
+}
+
+h2 {
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+    color: $blue02;
+}
+
+h3 {
+    font-size: 1.25rem;   
+    line-height: 1.875rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: $blue01;
+    opacity: 0.6;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    margin: 0 auto;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
