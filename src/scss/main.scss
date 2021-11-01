@@ -4,6 +4,7 @@
 
 @import "../components/header/header.scss";
 @import "../blocks/button/button.scss";
+@import "../components/intro/intro.scss";
 
 body {
     font-size: 16px;
@@ -40,14 +41,10 @@ p {
 .wrapper {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    align-items: center;
-}
-
-.content {
-    display: flex;
-    margin: 0 auto;
-}
+    min-height: 100vh;
+    margin: 0 0;
+    padding: 0 0;
+  }
 
 .col {
     display: flex;
