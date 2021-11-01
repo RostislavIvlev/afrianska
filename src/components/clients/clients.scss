@@ -1,0 +1,54 @@
+.clients-page {
+    display: flex;
+    flex-direction: column;
+    background-color: $blue04;
+    border-radius: 200px 0 0 0;
+    margin-top: 96px;
+    padding: 96px 15vw 110px 15vw;
+
+    &__intro {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 110px;
+    }
+
+    &__title {
+        color: $white;
+        max-width: 223px;
+    }
+
+    &__subtitle {
+        color: white;
+        max-width: 540px;
+    }
+
+    &__cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        justify-content: stretch;
+        background-color: #ffffff;
+    }
+
+    &__card {
+        height: 8rem;
+        background-color: #5A98D0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        cursor: pointer;       
+
+        &_focused {
+            background-color: #4e88bb;
+        }
+    
+        &:hover {
+            background-color: $blue02;
+            transition: 1s ease;
+        }
+    }
+}

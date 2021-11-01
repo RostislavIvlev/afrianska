@@ -1,0 +1,8 @@
+section.clients-page
+  .clients-page__intro
+    h2.clients-page__title Our Beloved Clients
+    p.clients-page__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+  .clients-page__cards
+    each card in ["LOGO CLIENT 1", "LOGO CLIENT 2", "LOGO CLIENT 3", "LOGO CLIENT 4", "LOGO CLIENT 5"]
+      a.clients-page__card= card
+    a.clients-page__card.clients-page__card_focused "More Clients"
