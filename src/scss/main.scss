@@ -2,6 +2,8 @@
 @import "./utils/reset.scss";
 @import "./utils/vars.scss";
 
+@import "../components/header/header.scss";
+
 body {
     font-size: 16px;
     font-family: $gilroy;
