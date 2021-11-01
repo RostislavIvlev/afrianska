@@ -1,0 +1,90 @@
+.footer {
+    background-color: $blue04;
+    padding-right: 5vw;
+
+    &__container {
+        background-color: $blue02;
+        border-top-right-radius: 200px;
+        width: 100%;
+        padding-right: 15vw;
+    }
+
+    &__copyright {
+        color: $white;
+        margin: 64px 0;
+        padding-left: 15vw;
+    }
+}
+
+.footer-promote {
+    padding: 91px 0 96px 15vw;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    width: 100%;
+
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    &__title {
+        color: white;
+        max-width: 317px;
+        margin-bottom: 32px;
+    }
+
+    &__subtitle {
+        color: white;
+        max-width: 460px;
+    }
+}
+
+.footer-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15vw;
+    margin-top: 96px;
+
+    &__ul {
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        max-width: 264px;
+    }
+
+    &__li {
+        opacity: 0.6;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &_title {
+            margin-bottom: 32px;
+            font-size: 1.25rem;   
+            line-height: 1.875rem;
+            opacity: 1;
+        }
+
+        &_logo {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__element {
+        color: $white;
+
+        &_company {
+            margin-left: 15px;
+            font-size: 28px;
+        }
+    }
+
+    &__label {
+        margin-right: 15px;
+        align-self: flex-start;
+    }
+}

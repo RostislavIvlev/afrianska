@@ -1,0 +1,41 @@
+footer.footer.col
+  .footer__container
+  
+    .footer-promote.row
+      .footer-promote__col
+        h2.footer-promote__title Interested to work with our team?
+        p.footer-promote__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+      +button("Let's Talk")
+
+    .footer__nav.footer-nav
+      ul.footer-nav__ul
+        li.footer-nav__li.footer-nav__li_title.footer-nav__li_logo
+          img(src="./assets/images/logo-footer.svg", alt="Company logo")
+          span.footer-nav__element_company Afrianska      
+        li.footer-nav__li
+          span.footer-nav__label A.
+          span.footer-nav__element Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        li.footer-nav__li
+          span.footer-nav__label T.
+          span.footer-nav__element +62-812-7313-4321
+        li.footer-nav__li
+          span.footer-nav__label E
+          span.footer-nav__element hello.afrian@gmail.com
+
+      ul.footer-nav__ul
+        each nav, index in ["About US", "About", "What We Do", "Project", "How It Work With Us"]
+          if index == 0
+            li.footer-nav__li.footer-nav__li_title= nav
+          else
+            li.footer-nav__li
+              a(href="#").footer-nav__element= nav
+      
+      ul.footer-nav__ul
+        each nav, index in ["Follow US", "Instagram", "Facebook", "LinkedIn", "Youtube"]
+          if index == 0
+            li.footer-nav__li.footer-nav__li_title= nav
+          else
+            li.footer-nav__li 
+              a(href="#").footer-nav__element= nav
+    
+    p.footer__copyright 2019 © Afrianska. All rights reserved. 
