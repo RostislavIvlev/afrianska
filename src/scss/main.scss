@@ -14,7 +14,8 @@ body {
     font-size: 16px;
     font-family: $gilroy;
     letter-spacing: 0.05em;
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -61,4 +62,34 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+
+@media screen and (max-width: $tableWidth) {
+    h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: $phoneWidth) {
+    h1 {
+        font-size: 1.8rem;
+        line-height: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
 }

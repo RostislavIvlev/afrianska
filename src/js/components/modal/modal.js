@@ -33,7 +33,6 @@ class Modal {
 
     openModal() {
         this.scrollPosition = window.pageYOffset;
-        console.log(this.scrollPosition);
         document.body.style.position = 'fixed';
         document.body.style.top = -this.scrollPosition + "px";
         document.body.classList.add("modal-opened")

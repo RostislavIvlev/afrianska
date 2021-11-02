@@ -4,21 +4,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 20vw 10vh 20vh;
+    padding: 0 20vw 10vh 20vw;
     position: relative;
     background: linear-gradient(0deg, rgba(152, 195, 232, 0.692) 8.84%, rgba(152, 195, 232, 0) 31.12%);
 
-    &__content {
-        
-    }
-
     &__title {
-        font-family: $galien;
-        font-size: 4rem;
-        line-height: 74px;
-        letter-spacing: 0.04;
         color: $blue01;
         max-width: 510px;
+        margin-bottom: 20px;
     }
 
     &__subtitle {
@@ -29,14 +22,10 @@
     &__img {
         z-index: -1;
         position: absolute;
-        right: 6vw;
-        top: 4vh;
+        right: 15vw;
+        top: 25vh;
         width: 40%;
-
-        @media screen and (max-width: 1400px) {
-            right: 15vw;
-            top: 15vw;
-        }
+        width: 30vw;
 
         @media screen and (max-width: $smDesktopWidth) {
             right: 0vw;
@@ -48,6 +37,17 @@
             display: none;
         }
     }
+}
 
+@media screen and (max-width: $tableWidth) {
+    .intro {
+        margin-top: 0;
+        padding: 0 10vw 0 10vw;
+    }
+}
 
+@media screen and (max-width: $phoneWidth) {
+    .intro {
+        margin-top: 80px;
+    }
 }

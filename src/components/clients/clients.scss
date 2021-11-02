@@ -52,3 +52,41 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .clients-page {
+
+        &__intro {
+            flex-direction: column;
+        }
+
+        &__title {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: $tableWidth) {
+    .clients-page {
+        margin-top: 0;
+        border-radius: 0;
+
+        &__intro {
+            margin-bottom: 30px;
+        }
+
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: $phoneWidth) {
+    .clients-page {
+
+        &__cards {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

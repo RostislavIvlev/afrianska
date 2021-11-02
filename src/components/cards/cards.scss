@@ -5,9 +5,6 @@
     justify-content: space-between;
 
     &__title {
-        font-size: 36px;
-        line-height: 46px;
-        letter-spacing: 0.05em;
         color: $blue02;
         max-width: 358px;
     }
@@ -54,12 +51,57 @@
     &__link {
         font-family: $gilroy;
         font-size: 14px;
-        font-height: 30px;
+        line-height: 30px;
         color: $blue04;
         align-self: flex-start;
+        justify-self: flex-end;
 
         & span {
             margin-right: 24px;
         }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cards {
+        padding: 50px 5vw 70px 5vw;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        padding: 20px;
+
+        &_card1 {
+            margin-left: 0;
+            margin-top: 30px;
+        }
+
+        &_card2 {
+            margin-bottom: 20px;
+        }
+
+        &__img {
+            max-width: 150px;
+
+            &_2 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $phoneWidth) {
+    .cards {
+        padding: 30px 10vw 30px 10vw;
+    }
+
+    .card {
+        width: 95vw;
     }
 }

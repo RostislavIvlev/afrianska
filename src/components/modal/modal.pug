@@ -2,12 +2,17 @@
   .modal
     .modal__close X
     .modal__title Send us message
-    form.modal__form.modal-form 
+    form.modal__form.modal-form#form(onsubmit="return false")
       label.modal-form__label(for="name") Full Name 
-      input.modal-form__input(type="text" placeholder="Name")
+      .modal-form__error#errorName Вам нужно ввести имя
+      input.modal-form__input(type="text" placeholder="Name" id="name")
       label.modal-form__label(for="email")  Email
-      input.modal-form__input(type="text" placeholder="Email")
+      .modal-form__error#errorEmail Вам нужно ввести Email
+      input.modal-form__input(type="text" placeholder="Email" id="email")
       label.modal-form__label(for="message")  Message
-      textarea.modal-form__textarea(name="", cols="30", rows="10" placeholder="Your message") 
+      .modal-form__error#errorMessage Вам нужно ввести сообщение
+      textarea.modal-form__textarea(name="", cols="30", rows="10" placeholder="Your message" id="message")
 
-      +button("Submit")(style="width: 100%")
+      +button("Submit")(id="submit" style="width: 100%")
+
+    .modal__form-sent Your message successfully sent!
